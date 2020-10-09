@@ -1,2 +1,2 @@
 # KlaatuServiceDebugger
-A debugger shim for developing and debugging Windows Services
+A debugging shim for developing, manual testing, and debugging Windows Services
