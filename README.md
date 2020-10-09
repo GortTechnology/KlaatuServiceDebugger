@@ -1,4 +1,4 @@
-# KlaatuServiceDebugger
+# Klaatu Service Debugger
 A debugging shim for developing, manual testing, and debugging Windows Services.
 
 How to use the Service Debugger.
@@ -33,7 +33,7 @@ To configure the ServiceDebugger, add the ServiceDebugger.dll to your Windows Se
       }
 	}
 
-After adding the ServiceDebugger.dll to your service application, set Visual Studio's debugger to  launch the service application as the default startup app and hit F5 like any normal Windows app. 
+Next, set Visual Studio's debugger to launch the service application as the default startup app and hit F5 like any normal Windows app. 
 
 You DO NOT need to add the entire ServiceDebugger project code to your Service Solution. Just add the ServiceDebugger.dll assembly, and modify the program.cs file as illustrated above.
 
