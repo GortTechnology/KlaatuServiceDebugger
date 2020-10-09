@@ -14,7 +14,7 @@ You can start, stop and restart the services as necessary without stopping and r
 * Click the [Stop] button to stop the service.
 * Click the [Restart] button to restart the service.
 
-To configure the ServiceDebugger, reference the ServiceDebugger.dll in your Windows Service project, then modify the service Main() - usually found in the service application's program.cs - as follows...
+To configure the ServiceDebugger, add the ServiceDebugger.dll to your Windows Service project then modify the service Main() - usually found in the service application's program.cs - as follows...
 
 	static class Program
 	{
