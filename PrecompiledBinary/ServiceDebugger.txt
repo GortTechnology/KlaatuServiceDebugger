@@ -1,4 +1,4 @@
-Akanomi Service Debugger by Phillip H. Blanton
+Gort Klaatu Service Debugger
 
 The Service Debugger is a library that allows you to debug a service easily from within Visual Studio. 
 
@@ -26,12 +26,16 @@ How to use the ServiceDebugger:
       ServicesToRun = new ServiceBase[] { new PluginService() };
 
       #if (DEBUG)
-      Akanomi.ServiceDebugger.ServiceLoader.StartServices(ServicesToRun);
+        GortServiceDebugger.ServiceLoader.StartServices(ServicesToRun);
       #else
-      ServiceBase.Run(ServicesToRun);
+        ServiceBase.Run(ServicesToRun);
       #endif
     }
 
 
-Be sure not to add a using clause to the top of the file for "Akanomi.ServiceDebugger" as this will require the ServiceDebugger dll to be deployed with the service at runtime. As long as the call to the ServiceDebugger is compile defined for debug mode, you will not be foreced to deploy the ServiceDebugger.dll.
+Be sure not to add a using clause to the top of the file for "GortServiceDebugger" 
+as this will require the ServiceDebugger.dll to be deployed with the service at runtime. 
+
+As long as the call to the ServiceDebugger is compile defined for debug mode, you will
+not be forced to deploy the ServiceDebugger.dll in release mode.
 
