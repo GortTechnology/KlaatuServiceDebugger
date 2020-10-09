@@ -33,7 +33,9 @@ To configure the ServiceDebugger, reference the ServiceDebugger.dll in your Wind
       }
 	}
 
-After adding the ServiceDebugger.dll to your service application, set Visual Studio's debugger to  launch the service application as the default startup app and hit F5 like any normal Windows app.
+After adding the ServiceDebugger.dll to your service application, set Visual Studio's debugger to  launch the service application as the default startup app and hit F5 like any normal Windows app. 
+
+You DO NOT need to add the entire ServiceDebugger project code to your Service Solution. Just add the ServiceDebugger.dll assembly, and modify the program.cs file as illustrated above.
 
 The ServiceDebugger shall NOT be deployed with the service compiled in release mode. It is compiled out and not required in release mode. 
 
