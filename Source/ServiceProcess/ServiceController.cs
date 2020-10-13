@@ -149,9 +149,10 @@ namespace GortServiceDebugger
       }
     }
 
-    private void ServicesController_Load(object sender, EventArgs e)
-    {
-        label1.Text = string.Format("Copyright ©{0} Akanomi Softworks Inc.", DateTime.Now.Year);
+        private void ServicesController_Load(object sender, EventArgs e)
+        {
+            label1.Text = string.Format("Copyright ©{0} Gort Technology Inc.", DateTime.Now.Year);
+        }
+
     }
-  }
 }
