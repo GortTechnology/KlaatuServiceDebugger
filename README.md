@@ -29,7 +29,7 @@ To configure the ServiceDebugger, add the ServiceDebugger.dll to your Windows Se
 		  new ServiceDebuggerTestService()
 		};
 		#if (DEBUG)
-   	        Akanomi.ServiceDebugger.ServiceLoader.StartServices(ServicesToRun);
+   	        GortServiceDebugger.ServiceLoader.StartServices(ServicesToRun);
         #else
             ServiceBase.Run(ServicesToRun);
         #endif
