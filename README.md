@@ -42,6 +42,6 @@ The form will load all available services into the grid. You can select the serv
 
 ## Deployment
 
-You DO NOT need to add the entire ServiceDebugger project code to your Service Solution. Just add the ServiceDebugger.dll assembly, and modify the program.cs file as illustrated above. The source code is provided for you so that you can modify it if you desire, but you only need the compiled assembly found in the [PrecompiledBinary](https://github.com/GortTechnology/KlaatuServiceDebugger/tree/main/PrecompiledBinary) folder to use the debugger shim with your service project. 
+You DO NOT need to add the entire ServiceDebugger project code to your Service Solution. Just add the ServiceDebugger.dll assembly found in the [PrecompiledBinary](https://github.com/GortTechnology/KlaatuServiceDebugger/tree/main/PrecompiledBinary) folder, and modify the program.cs file as illustrated above. The source code is provided for you so that you can modify it if you desire but you only need the pre-compiled assembly to use the debugger shim with your service project.
 
-The ServiceDebugger shall NOT be deployed with the service compiled in release mode. It is compiled out and not required in release mode. Neither is it licensed, or necessary for deployment to end-users.
+The ServiceDebugger should NOT be deployed with the service compiled in release mode. It is compiled out and not required in release mode. Neither is it licensed, necessary, or useful for deployment to end-users.
