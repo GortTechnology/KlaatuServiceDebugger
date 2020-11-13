@@ -1,53 +1,52 @@
 /**************************************************************************************************
-MIT License
-
-Copyright ©2020 Phillip H. Blanton (http://www.Gort.co) All rights reserved.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and 
-associated documentation files (the "Software"), to deal in the Software without restriction, 
-including without limitation the rights to use, copy, modify, merge, publish, distribute, 
-sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is 
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or 
-substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING 
-BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND 
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
-DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+* SPDX-License-Identifier: GPL-2.0
+* GPL v.2 License
+* ---------------
+* ServicesController.Designer.cs
+* 
+* Copyright © 2006-2020 Phillip H. Blanton / Gort Technology (http://gort.co) All rights reserved.
+*
+* This program is free software; you can redistribute it and/or modify it under the terms of the 
+* GNU General Public License as published by the Free Software Foundation; either version 2 of 
+* the License, or (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+* without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See 
+* the GNU General Public License for more details. You should have received a copy of the GNU 
+* General Public License along with this program; if not, write to the Free Software Foundation, 
+* Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 **************************************************************************************************/
+
 namespace GortServiceDebugger
 {
-    partial class ServicesController
-    {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+	partial class ServicesController
+	{
+		/// <summary>
+		/// Required designer variable.
+		/// </summary>
+		private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+		/// <summary>
+		/// Clean up any resources being used.
+		/// </summary>
+		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		protected override void Dispose(bool disposing)
+		{
+			if (disposing && (components != null))
+			{
+				components.Dispose();
+			}
+			base.Dispose(disposing);
+		}
 
-        #region Windows Form Designer generated code
+		#region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
+		/// <summary>
+		/// Required method for Designer support - do not modify
+		/// the contents of this method with the code editor.
+		/// </summary>
+		private void InitializeComponent()
+		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ServicesController));
 			this.btnExit = new System.Windows.Forms.Button();
 			this.lvServices = new System.Windows.Forms.ListView();
@@ -63,7 +62,8 @@ namespace GortServiceDebugger
 			// 
 			// btnExit
 			// 
-			this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom 
+				| System.Windows.Forms.AnchorStyles.Right)));
 			this.btnExit.Location = new System.Drawing.Point(333, 220);
 			this.btnExit.Name = "btnExit";
 			this.btnExit.Size = new System.Drawing.Size(75, 23);
@@ -74,13 +74,14 @@ namespace GortServiceDebugger
 			// 
 			// lvServices
 			// 
-			this.lvServices.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			this.lvServices.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top 
+				| System.Windows.Forms.AnchorStyles.Bottom)
+				| System.Windows.Forms.AnchorStyles.Left)
+				| System.Windows.Forms.AnchorStyles.Right)));
 			this.lvServices.BackgroundImage = global::GortServiceDebugger.ImageResource.smallwatermark;
 			this.lvServices.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.chName,
-            this.chStatus});
+				this.chName,
+				this.chStatus});
 			this.lvServices.HideSelection = false;
 			this.lvServices.Location = new System.Drawing.Point(12, 41);
 			this.lvServices.MultiSelect = false;
@@ -106,9 +107,9 @@ namespace GortServiceDebugger
 			// 
 			this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
 			this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnPlayPause,
-            this.btnStop,
-            this.btnRestart});
+				this.btnPlayPause,
+				this.btnStop,
+				this.btnRestart});
 			this.toolStrip1.Location = new System.Drawing.Point(0, 0);
 			this.toolStrip1.Name = "toolStrip1";
 			this.toolStrip1.Size = new System.Drawing.Size(420, 38);
@@ -153,7 +154,8 @@ namespace GortServiceDebugger
 			// 
 			// label1
 			// 
-			this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom 
+				| System.Windows.Forms.AnchorStyles.Left)));
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.Location = new System.Drawing.Point(9, 228);
@@ -180,18 +182,18 @@ namespace GortServiceDebugger
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
-        }
+		}
 
-        #endregion
+		#endregion
 
-        private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.ListView lvServices;
-        private System.Windows.Forms.ColumnHeader chName;
-        private System.Windows.Forms.ColumnHeader chStatus;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton btnPlayPause;
-        private System.Windows.Forms.ToolStripButton btnStop;
-        private System.Windows.Forms.ToolStripButton btnRestart;
-        private System.Windows.Forms.Label label1;
-    }
+		private System.Windows.Forms.Button btnExit;
+		private System.Windows.Forms.ListView lvServices;
+		private System.Windows.Forms.ColumnHeader chName;
+		private System.Windows.Forms.ColumnHeader chStatus;
+		private System.Windows.Forms.ToolStrip toolStrip1;
+		private System.Windows.Forms.ToolStripButton btnPlayPause;
+		private System.Windows.Forms.ToolStripButton btnStop;
+		private System.Windows.Forms.ToolStripButton btnRestart;
+		private System.Windows.Forms.Label label1;
+	}
 }

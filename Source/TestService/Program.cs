@@ -1,4 +1,5 @@
 ﻿/**************************************************************************************************
+* SPDX-License-Identifier: GPL-2.0
 * GPL v.2 License
 * ---------------
 * Program.cs
@@ -33,22 +34,22 @@ namespace GortTestService
 				new ServiceDebuggerTestService()
 			};
 
-/* 
- This is where the Service Debugger hooks into your Windows Service.
+			/* 
+			 This is where the Service Debugger hooks into your Windows Service.
 
- Debug:
- In debug mode, the application runs as a Windows application and the service debugger is shown so 
- that you can start and stop the service for debugging. 
+			 Debug:
+			 In debug mode, the application runs as a Windows application and the service debugger is shown so 
+			 that you can start and stop the service for debugging. 
 
- Release:
- In release mode, the Service Debugger is compiled out so that the Windows service behaves normally 
- and need not be deployed with the service. 
+			 Release:
+			 In release mode, the Service Debugger is compiled out so that the Windows service behaves normally 
+			 and need not be deployed with the service. 
 
- Development:
- You DO NOT NEED TO include the code for the service debugger in the Windows service solution. 
- Just compile the service debugger in release mode, then add the resulting ServiceDebugger.dll to 
- your Windows Service as a design-time library.
-*/
+			 Development:
+			 You DO NOT NEED TO include the code for the service debugger in the Windows service solution. 
+			 Just compile the service debugger in release mode, then add the resulting ServiceDebugger.dll to 
+			 your Windows Service as a design-time library.
+			*/
 
 #if DEBUG
 			GortServiceDebugger.ServiceLoader.StartServices(ServicesToRun);

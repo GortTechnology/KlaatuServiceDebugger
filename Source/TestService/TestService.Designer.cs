@@ -1,4 +1,5 @@
 ﻿/**************************************************************************************************
+* SPDX-License-Identifier: GPL-2.0
 * GPL v.2 License
 * ---------------
 * Service.Designer.cs
@@ -18,34 +19,34 @@
 
 namespace GortTestService
 {
-   partial class ServiceDebuggerTestService
-   {
-      /// <summary> 
-      /// Required designer variable.
-      /// </summary>
-      private System.ComponentModel.IContainer components = null;
+	partial class ServiceDebuggerTestService
+	{
+		/// <summary> 
+		/// Required designer variable.
+		/// </summary>
+		private System.ComponentModel.IContainer components = null;
 
-      /// <summary>
-      /// Clean up any resources being used.
-      /// </summary>
-      /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-      protected override void Dispose(bool disposing)
-      {
-         if (disposing && (components != null))
-         {
-            components.Dispose();
-         }
-         base.Dispose(disposing);
-      }
+		/// <summary>
+		/// Clean up any resources being used.
+		/// </summary>
+		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		protected override void Dispose(bool disposing)
+		{
+			if (disposing && (components != null))
+			{
+				components.Dispose();
+			}
+			base.Dispose(disposing);
+		}
 
-      #region Component Designer generated code
+		#region Component Designer generated code
 
-      /// <summary> 
-      /// Required method for Designer support - do not modify 
-      /// the contents of this method with the code editor.
-      /// </summary>
-      private void InitializeComponent()
-      {
+		/// <summary> 
+		/// Required method for Designer support - do not modify 
+		/// the contents of this method with the code editor.
+		/// </summary>
+		private void InitializeComponent()
+		{
 			this.components = new System.ComponentModel.Container();
 			this.timer = new System.Windows.Forms.Timer(this.components);
 			// 
@@ -57,10 +58,10 @@ namespace GortTestService
 			// ServiceDebuggerTestService
 			// 
 			this.ServiceName = "KlaatuTestService";
-      }
+		}
 
-      #endregion
+		#endregion
 
-      private System.Windows.Forms.Timer timer;
-   }
+		private System.Windows.Forms.Timer timer;
+	}
 }
